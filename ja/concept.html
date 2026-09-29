@@ -45,7 +45,8 @@
 <style>
 .lang { display: flex; gap: 12px; font-family: 'Noto Sans JP', sans-serif; font-size: 12px; letter-spacing: .1em; color: #4B4A48; }
 .lang a { color: inherit; text-decoration: none; }
-.lang a[aria-current] { border-bottom: 1px solid currentColor; }
+.lang a[aria-current] { border-bottom: none; font-weight: 600; }
+.lang a:not([aria-current]) { border-bottom: 1px solid currentColor; }
 .lang-ru [style*="Zen Old Mincho"], .lang-ru h3, .lang-ru h4 { font-family: 'Noto Serif', 'Times New Roman', serif !important; letter-spacing: 0 !important; }
 .flow br { display: none; }
 .lang-en [style*="Zen Old Mincho"] { letter-spacing: .02em !important; }
